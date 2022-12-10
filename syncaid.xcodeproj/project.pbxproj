@@ -1,0 +1,1332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3936AC6E94A2F78F3B33C972 /* Pods_syncaid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240A385474B5D9234F423681 /* Pods_syncaid.framework */; };
+		7C0821AB292BE73800B04A22 /* VerifyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0821AA292BE73800B04A22 /* VerifyAccountViewController.swift */; };
+		7C0821AF292C24BD00B04A22 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0821AE292C24BD00B04A22 /* InfoViewController.swift */; };
+		7C1F630029252B7F00CCA3E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1F62FF29252B7F00CCA3E8 /* Main.storyboard */; };
+		7C29CA8E292C895900E097A6 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29CA8D292C895900E097A6 /* SignupViewController.swift */; };
+		7C29CA91292C97E900E097A6 /* AllDoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29CA90292C97E900E097A6 /* AllDoneViewController.swift */; };
+		7C29CA94292CACD400E097A6 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29CA93292CACD400E097A6 /* ForgotPasswordViewController.swift */; };
+		7C29CA97292CB60A00E097A6 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29CA96292CB60A00E097A6 /* OTPViewController.swift */; };
+		7C2F17462938C3270049D8E7 /* GuardianSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F17452938C3270049D8E7 /* GuardianSettingsViewController.swift */; };
+		7C2F416A2930FE3500C8AA09 /* PatientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F41692930FE3500C8AA09 /* PatientSettingsViewController.swift */; };
+		7C34972F2922590C00C346C3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34972E2922590C00C346C3 /* WelcomeView.swift */; };
+		7C3497352922693500C346C3 /* syncaidapp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3497342922693500C346C3 /* syncaidapp.swift */; };
+		7C3497412922911F00C346C3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3497402922911F00C346C3 /* SplashScreenView.swift */; };
+		7C35C84229377B9F00BC9C2C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C35C84129377B9F00BC9C2C /* HistoryViewController.swift */; };
+		7C4107912935161E005B7796 /* syncaidWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4107902935161E005B7796 /* syncaidWatchApp.swift */; };
+		7C4107932935161E005B7796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4107922935161E005B7796 /* ContentView.swift */; };
+		7C4107952935161F005B7796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4107942935161F005B7796 /* Assets.xcassets */; };
+		7C4107982935161F005B7796 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4107972935161F005B7796 /* Preview Assets.xcassets */; };
+		7C41079B2935161F005B7796 /* syncaidWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7C41078E2935161E005B7796 /* syncaidWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7C41079F293516BE005B7796 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3D2D4293513B0001AC8ED /* SyncService.swift */; };
+		7C41E3F1293828E600999DFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41E3F0293828E600999DFB /* User.swift */; };
+		7C41E3F82938292100999DFB /* Faint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41E3F72938292100999DFB /* Faint.swift */; };
+		7C41E3FC293834A100999DFB /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C41E3FB293834A100999DFB /* HistoryTableViewCell.swift */; };
+		7C47F272291BA57800E31593 /* syncaidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47F271291BA57800E31593 /* syncaidTests.swift */; };
+		7C47F27C291BA57800E31593 /* syncaidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47F27B291BA57800E31593 /* syncaidUITests.swift */; };
+		7C47F27E291BA57800E31593 /* syncaidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47F27D291BA57800E31593 /* syncaidUITestsLaunchTests.swift */; };
+		7C555DA2293DFC61009C5AC4 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555DA1293DFC61009C5AC4 /* QRViewController.swift */; };
+		7C5CAFC229314C11003428E8 /* PatientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CAFC129314C11003428E8 /* PatientProfileViewController.swift */; };
+		7C69410529323439007ED40D /* GuardianHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69410429323439007ED40D /* GuardianHomeViewController.swift */; };
+		7C69410729325958007ED40D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69410629325958007ED40D /* LoadingViewController.swift */; };
+		7C6DDFA32937E52700EE0EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6DDFA22937E52700EE0EA9 /* Assets.xcassets */; };
+		7C74C64C293BD20700D043E8 /* GuardianProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C74C64B293BD20700D043E8 /* GuardianProfileViewController.swift */; };
+		7C7850B52938263F003B9DE6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7850B42938263F003B9DE6 /* UserViewModel.swift */; };
+		7C805EAE2938211900D26EAD /* FaintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C805EAD2938211900D26EAD /* FaintViewModel.swift */; };
+		7C80B2622924F3E10090001C /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80B2612924F3E10090001C /* RoleView.swift */; };
+		7C80B2642924F3F60090001C /* PatientSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80B2632924F3F60090001C /* PatientSelectButton.swift */; };
+		7C80B2662924F3FE0090001C /* GuardianSelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80B2652924F3FE0090001C /* GuardianSelectButton.swift */; };
+		7C80B27A29251E730090001C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C80B27929251E730090001C /* LoginViewController.swift */; };
+		7C991F10293E23BA0037D702 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C991F0F293E23BA0037D702 /* Scanner.swift */; };
+		7C991F12293E25060037D702 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C991F11293E25060037D702 /* ScannerViewController.swift */; };
+		7C991F16293E42910037D702 /* ManageGuardianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C991F15293E42910037D702 /* ManageGuardianViewController.swift */; };
+		7C991F18293E48EC0037D702 /* ManageGuardiansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C991F17293E48EC0037D702 /* ManageGuardiansTableViewCell.swift */; };
+		7C9AC19E29354CB400CFAA9B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9AC19D29354CB400CFAA9B /* SwiftUIView.swift */; };
+		7C9AC1A1293550D800CFAA9B /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 7C9AC1A0293550D800CFAA9B /* SwiftUICharts */; };
+		7CAF9BB22928287500A6C5E6 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF9BB12928287500A6C5E6 /* Variables.swift */; };
+		7CC4BE272943C2F100084DBF /* EmailToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC4BE262943C2F100084DBF /* EmailToken.swift */; };
+		7CCFEFA12939240600D0933B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7CCFEFA02939240600D0933B /* SwiftyJSON */; };
+		7CE3D2D5293513B0001AC8ED /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3D2D4293513B0001AC8ED /* SyncService.swift */; };
+		8351CA79F006918F86A67004 /* Pods_syncaid_syncaidUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E3979EEE3FFBC89CC91D32 /* Pods_syncaid_syncaidUITests.framework */; };
+		F24215E7D3E44742CA075928 /* Pods_syncaidTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA03F73907EBB99F705D4579 /* Pods_syncaidTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C4107992935161F005B7796 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C47F254291BA57600E31593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C41078D2935161E005B7796;
+			remoteInfo = "syncaidWatch Watch App";
+		};
+		7C47F26E291BA57800E31593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C47F254291BA57600E31593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C47F25B291BA57600E31593;
+			remoteInfo = syncaid;
+		};
+		7C47F278291BA57800E31593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C47F254291BA57600E31593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C47F25B291BA57600E31593;
+			remoteInfo = syncaid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C7594672935062300FB7D41 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7C41079B2935161F005B7796 /* syncaidWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07E3979EEE3FFBC89CC91D32 /* Pods_syncaid_syncaidUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_syncaid_syncaidUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3DC7237793D5A48727DECA /* Pods-syncaidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-syncaidTests.debug.xcconfig"; path = "Target Support Files/Pods-syncaidTests/Pods-syncaidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23B27B6EE5B9ACA67041ECEA /* Pods-syncaid-syncaidUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-syncaid-syncaidUITests.release.xcconfig"; path = "Target Support Files/Pods-syncaid-syncaidUITests/Pods-syncaid-syncaidUITests.release.xcconfig"; sourceTree = "<group>"; };
+		240A385474B5D9234F423681 /* Pods_syncaid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_syncaid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C02F413293BFDD900593C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7C0821AA292BE73800B04A22 /* VerifyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccountViewController.swift; sourceTree = "<group>"; };
+		7C0821AE292C24BD00B04A22 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		7C1F62FF29252B7F00CCA3E8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7C29CA8D292C895900E097A6 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		7C29CA90292C97E900E097A6 /* AllDoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoneViewController.swift; sourceTree = "<group>"; };
+		7C29CA93292CACD400E097A6 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7C29CA96292CB60A00E097A6 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		7C2F17452938C3270049D8E7 /* GuardianSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianSettingsViewController.swift; sourceTree = "<group>"; };
+		7C2F41692930FE3500C8AA09 /* PatientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSettingsViewController.swift; sourceTree = "<group>"; };
+		7C34972E2922590C00C346C3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7C3497342922693500C346C3 /* syncaidapp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncaidapp.swift; sourceTree = "<group>"; };
+		7C3497402922911F00C346C3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		7C35C84129377B9F00BC9C2C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		7C41078E2935161E005B7796 /* syncaidWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "syncaidWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4107902935161E005B7796 /* syncaidWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncaidWatchApp.swift; sourceTree = "<group>"; };
+		7C4107922935161E005B7796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C4107942935161F005B7796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C4107972935161F005B7796 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C41E3F0293828E600999DFB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = syncaid/Models/User.swift; sourceTree = SOURCE_ROOT; };
+		7C41E3F72938292100999DFB /* Faint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faint.swift; sourceTree = "<group>"; };
+		7C41E3FB293834A100999DFB /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		7C47F25C291BA57600E31593 /* syncaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = syncaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47F265291BA57700E31593 /* syncaid.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = syncaid.entitlements; sourceTree = "<group>"; };
+		7C47F26D291BA57800E31593 /* syncaidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = syncaidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47F271291BA57800E31593 /* syncaidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncaidTests.swift; sourceTree = "<group>"; };
+		7C47F277291BA57800E31593 /* syncaidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = syncaidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47F27B291BA57800E31593 /* syncaidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncaidUITests.swift; sourceTree = "<group>"; };
+		7C47F27D291BA57800E31593 /* syncaidUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syncaidUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C555DA1293DFC61009C5AC4 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		7C5CAFC129314C11003428E8 /* PatientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientProfileViewController.swift; sourceTree = "<group>"; };
+		7C69410429323439007ED40D /* GuardianHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianHomeViewController.swift; sourceTree = "<group>"; };
+		7C69410629325958007ED40D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		7C6DDFA22937E52700EE0EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = syncaid/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		7C74C64B293BD20700D043E8 /* GuardianProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianProfileViewController.swift; sourceTree = "<group>"; };
+		7C7850B42938263F003B9DE6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		7C805EAD2938211900D26EAD /* FaintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaintViewModel.swift; sourceTree = "<group>"; };
+		7C80B2612924F3E10090001C /* RoleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
+		7C80B2632924F3F60090001C /* PatientSelectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientSelectButton.swift; sourceTree = "<group>"; };
+		7C80B2652924F3FE0090001C /* GuardianSelectButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianSelectButton.swift; sourceTree = "<group>"; };
+		7C80B27929251E730090001C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7C991F0F293E23BA0037D702 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		7C991F11293E25060037D702 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		7C991F15293E42910037D702 /* ManageGuardianViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGuardianViewController.swift; sourceTree = "<group>"; };
+		7C991F17293E48EC0037D702 /* ManageGuardiansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGuardiansTableViewCell.swift; sourceTree = "<group>"; };
+		7C9AC19D29354CB400CFAA9B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		7CAF9BB12928287500A6C5E6 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		7CC4BE262943C2F100084DBF /* EmailToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailToken.swift; sourceTree = "<group>"; };
+		7CE3D2D4293513B0001AC8ED /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		9B891BB7F724A7EFD357BBC9 /* Pods-syncaid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-syncaid.debug.xcconfig"; path = "Target Support Files/Pods-syncaid/Pods-syncaid.debug.xcconfig"; sourceTree = "<group>"; };
+		A554340DB53454879860F6C5 /* Pods-syncaid-syncaidUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-syncaid-syncaidUITests.debug.xcconfig"; path = "Target Support Files/Pods-syncaid-syncaidUITests/Pods-syncaid-syncaidUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA03F73907EBB99F705D4579 /* Pods_syncaidTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_syncaidTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD91F4B739363FD05A21E89E /* Pods-syncaidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-syncaidTests.release.xcconfig"; path = "Target Support Files/Pods-syncaidTests/Pods-syncaidTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD0DDEFE2C56FF10C95F9C3A /* Pods-syncaid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-syncaid.release.xcconfig"; path = "Target Support Files/Pods-syncaid/Pods-syncaid.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C41078B2935161E005B7796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F259291BA57600E31593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CCFEFA12939240600D0933B /* SwiftyJSON in Frameworks */,
+				3936AC6E94A2F78F3B33C972 /* Pods_syncaid.framework in Frameworks */,
+				7C9AC1A1293550D800CFAA9B /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F26A291BA57800E31593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F24215E7D3E44742CA075928 /* Pods_syncaidTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F274291BA57800E31593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8351CA79F006918F86A67004 /* Pods_syncaid_syncaidUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C0821AC292BF75400B04A22 /* VerifyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				7C0821AA292BE73800B04A22 /* VerifyAccountViewController.swift */,
+			);
+			path = VerifyAccount;
+			sourceTree = "<group>";
+		};
+		7C0821AD292C248100B04A22 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				7C0821AE292C24BD00B04A22 /* InfoViewController.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		7C1F630129252C7D00CCA3E8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7C80B27929251E730090001C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7C1F630229252D3200CCA3E8 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7C29CA8F292C97DA00E097A6 /* AllDone */,
+				7C0821AD292C248100B04A22 /* Info */,
+				7C0821AC292BF75400B04A22 /* VerifyAccount */,
+				7CAF9BAF29281C5D00A6C5E6 /* Role */,
+				7C29CA8D292C895900E097A6 /* SignupViewController.swift */,
+			);
+			path = "\U0010SignUp";
+			sourceTree = "<group>";
+		};
+		7C29CA8F292C97DA00E097A6 /* AllDone */ = {
+			isa = PBXGroup;
+			children = (
+				7C29CA90292C97E900E097A6 /* AllDoneViewController.swift */,
+			);
+			path = AllDone;
+			sourceTree = "<group>";
+		};
+		7C29CA92292CACA300E097A6 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				7C29CA93292CACD400E097A6 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		7C29CA95292CB5FD00E097A6 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				7C29CA96292CB60A00E097A6 /* OTPViewController.swift */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		7C2F17442938C3000049D8E7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7C74C64B293BD20700D043E8 /* GuardianProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7C2F41682930FE1800C8AA09 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+				7C35C84029377B8700BC9C2C /* History */,
+				7C2F41712931340B00C8AA09 /* Home */,
+				7C2F416B293108F000C8AA09 /* Settings */,
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		7C2F416B293108F000C8AA09 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7C2F41692930FE3500C8AA09 /* PatientSettingsViewController.swift */,
+				7C6DDFA52937FA0A00EE0EA9 /* Profile */,
+				7C6DDFA42937F9FE00EE0EA9 /* ManageGuardians */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7C2F41712931340B00C8AA09 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7C9AC19D29354CB400CFAA9B /* SwiftUIView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7C35C84029377B8700BC9C2C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				7C35C84129377B9F00BC9C2C /* HistoryViewController.swift */,
+				7C41E3FB293834A100999DFB /* HistoryTableViewCell.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		7C41078F2935161E005B7796 /* syncaidWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				7C4107902935161E005B7796 /* syncaidWatchApp.swift */,
+				7C4107922935161E005B7796 /* ContentView.swift */,
+				7C4107942935161F005B7796 /* Assets.xcassets */,
+				7C4107962935161F005B7796 /* Preview Content */,
+			);
+			path = "syncaidWatch Watch App";
+			sourceTree = "<group>";
+		};
+		7C4107962935161F005B7796 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7C4107972935161F005B7796 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C41E3F4293828ED00999DFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C41E3F72938292100999DFB /* Faint.swift */,
+				7C41E3F0293828E600999DFB /* User.swift */,
+				7CC4BE262943C2F100084DBF /* EmailToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C47F253291BA57600E31593 = {
+			isa = PBXGroup;
+			children = (
+				7CE3D2D3293513A0001AC8ED /* Shared */,
+				7C3497342922693500C346C3 /* syncaidapp.swift */,
+				7C47F25E291BA57600E31593 /* syncaid */,
+				7C47F270291BA57800E31593 /* syncaidTests */,
+				7C47F27A291BA57800E31593 /* syncaidUITests */,
+				7C41078F2935161E005B7796 /* syncaidWatch Watch App */,
+				7C47F25D291BA57600E31593 /* Products */,
+				DD29026B5E3E6362F83EFD34 /* Pods */,
+				CD5B036C13F7A99EDCD01306 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C47F25D291BA57600E31593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C47F25C291BA57600E31593 /* syncaid.app */,
+				7C47F26D291BA57800E31593 /* syncaidTests.xctest */,
+				7C47F277291BA57800E31593 /* syncaidUITests.xctest */,
+				7C41078E2935161E005B7796 /* syncaidWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C47F25E291BA57600E31593 /* syncaid */ = {
+			isa = PBXGroup;
+			children = (
+				7C02F413293BFDD900593C78 /* Info.plist */,
+				7C41E3F4293828ED00999DFB /* Models */,
+				7CAF9BB02928283100A6C5E6 /* Utils */,
+				7CAF9BAA29281B1300A6C5E6 /* ViewModel */,
+				7CE7A785291E9265002622C6 /* View */,
+				7C47F265291BA57700E31593 /* syncaid.entitlements */,
+				7C6DDFA22937E52700EE0EA9 /* Assets.xcassets */,
+				7C47F266291BA57700E31593 /* Preview Content */,
+			);
+			path = syncaid;
+			sourceTree = "<group>";
+		};
+		7C47F266291BA57700E31593 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C47F270291BA57800E31593 /* syncaidTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C47F271291BA57800E31593 /* syncaidTests.swift */,
+			);
+			path = syncaidTests;
+			sourceTree = "<group>";
+		};
+		7C47F27A291BA57800E31593 /* syncaidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C47F27B291BA57800E31593 /* syncaidUITests.swift */,
+				7C47F27D291BA57800E31593 /* syncaidUITestsLaunchTests.swift */,
+			);
+			path = syncaidUITests;
+			sourceTree = "<group>";
+		};
+		7C4DC72529293F91001BD9E8 /* Guardian */ = {
+			isa = PBXGroup;
+			children = (
+				7C991F14293E33ED0037D702 /* Settings */,
+				7C2F17442938C3000049D8E7 /* Profile */,
+				7C9A290F292FF8C6005F23CD /* Home */,
+			);
+			path = Guardian;
+			sourceTree = "<group>";
+		};
+		7C6DDFA42937F9FE00EE0EA9 /* ManageGuardians */ = {
+			isa = PBXGroup;
+			children = (
+				7C991F0E293E23A20037D702 /* QRcode */,
+				7C991F15293E42910037D702 /* ManageGuardianViewController.swift */,
+				7C991F17293E48EC0037D702 /* ManageGuardiansTableViewCell.swift */,
+			);
+			path = ManageGuardians;
+			sourceTree = "<group>";
+		};
+		7C6DDFA52937FA0A00EE0EA9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7C5CAFC129314C11003428E8 /* PatientProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7C991F0E293E23A20037D702 /* QRcode */ = {
+			isa = PBXGroup;
+			children = (
+				7C991F0F293E23BA0037D702 /* Scanner.swift */,
+				7C991F11293E25060037D702 /* ScannerViewController.swift */,
+			);
+			path = QRcode;
+			sourceTree = "<group>";
+		};
+		7C991F13293E26FE0037D702 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7C34972E2922590C00C346C3 /* WelcomeView.swift */,
+				7C3497402922911F00C346C3 /* SplashScreenView.swift */,
+				7C555DA1293DFC61009C5AC4 /* QRViewController.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7C991F14293E33ED0037D702 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7C2F17452938C3270049D8E7 /* GuardianSettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7C9A290F292FF8C6005F23CD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7C69410429323439007ED40D /* GuardianHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7CAF9BAA29281B1300A6C5E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C805EAD2938211900D26EAD /* FaintViewModel.swift */,
+				7C7850B42938263F003B9DE6 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CAF9BAF29281C5D00A6C5E6 /* Role */ = {
+			isa = PBXGroup;
+			children = (
+				7C80B2652924F3FE0090001C /* GuardianSelectButton.swift */,
+				7C80B2632924F3F60090001C /* PatientSelectButton.swift */,
+				7C80B2612924F3E10090001C /* RoleView.swift */,
+			);
+			path = Role;
+			sourceTree = "<group>";
+		};
+		7CAF9BB02928283100A6C5E6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7CAF9BB12928287500A6C5E6 /* Variables.swift */,
+				7C69410629325958007ED40D /* LoadingViewController.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7CE3D2D3293513A0001AC8ED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7CE3D2D4293513B0001AC8ED /* SyncService.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		7CE7A785291E9265002622C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C991F13293E26FE0037D702 /* Shared */,
+				7C2F41682930FE1800C8AA09 /* Patient */,
+				7C29CA95292CB5FD00E097A6 /* OTP */,
+				7C29CA92292CACA300E097A6 /* ForgotPassword */,
+				7C1F630229252D3200CCA3E8 /* SignUp */,
+				7C1F630129252C7D00CCA3E8 /* Login */,
+				7C4DC72529293F91001BD9E8 /* Guardian */,
+				7C1F62FF29252B7F00CCA3E8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD5B036C13F7A99EDCD01306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				240A385474B5D9234F423681 /* Pods_syncaid.framework */,
+				07E3979EEE3FFBC89CC91D32 /* Pods_syncaid_syncaidUITests.framework */,
+				AA03F73907EBB99F705D4579 /* Pods_syncaidTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD29026B5E3E6362F83EFD34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B891BB7F724A7EFD357BBC9 /* Pods-syncaid.debug.xcconfig */,
+				FD0DDEFE2C56FF10C95F9C3A /* Pods-syncaid.release.xcconfig */,
+				A554340DB53454879860F6C5 /* Pods-syncaid-syncaidUITests.debug.xcconfig */,
+				23B27B6EE5B9ACA67041ECEA /* Pods-syncaid-syncaidUITests.release.xcconfig */,
+				0F3DC7237793D5A48727DECA /* Pods-syncaidTests.debug.xcconfig */,
+				BD91F4B739363FD05A21E89E /* Pods-syncaidTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C41078D2935161E005B7796 /* syncaidWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C41079C2935161F005B7796 /* Build configuration list for PBXNativeTarget "syncaidWatch Watch App" */;
+			buildPhases = (
+				7C41078A2935161E005B7796 /* Sources */,
+				7C41078B2935161E005B7796 /* Frameworks */,
+				7C41078C2935161E005B7796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "syncaidWatch Watch App";
+			productName = "syncaidWatch Watch App";
+			productReference = 7C41078E2935161E005B7796 /* syncaidWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C47F25B291BA57600E31593 /* syncaid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C47F281291BA57800E31593 /* Build configuration list for PBXNativeTarget "syncaid" */;
+			buildPhases = (
+				4EB09AD91AEC645FC8746072 /* [CP] Check Pods Manifest.lock */,
+				7C47F258291BA57600E31593 /* Sources */,
+				7C47F259291BA57600E31593 /* Frameworks */,
+				7C47F25A291BA57600E31593 /* Resources */,
+				80D3B8AF2DF2766A523B1F08 /* [CP] Embed Pods Frameworks */,
+				7C7594672935062300FB7D41 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C41079A2935161F005B7796 /* PBXTargetDependency */,
+			);
+			name = syncaid;
+			packageProductDependencies = (
+				7C9AC1A0293550D800CFAA9B /* SwiftUICharts */,
+				7CCFEFA02939240600D0933B /* SwiftyJSON */,
+			);
+			productName = syncaid;
+			productReference = 7C47F25C291BA57600E31593 /* syncaid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C47F26C291BA57800E31593 /* syncaidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C47F284291BA57800E31593 /* Build configuration list for PBXNativeTarget "syncaidTests" */;
+			buildPhases = (
+				7259F6149812CE2925534BE8 /* [CP] Check Pods Manifest.lock */,
+				7C47F269291BA57800E31593 /* Sources */,
+				7C47F26A291BA57800E31593 /* Frameworks */,
+				7C47F26B291BA57800E31593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C47F26F291BA57800E31593 /* PBXTargetDependency */,
+			);
+			name = syncaidTests;
+			productName = syncaidTests;
+			productReference = 7C47F26D291BA57800E31593 /* syncaidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C47F276291BA57800E31593 /* syncaidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C47F287291BA57800E31593 /* Build configuration list for PBXNativeTarget "syncaidUITests" */;
+			buildPhases = (
+				24726DDDAD7C78D64BF0473D /* [CP] Check Pods Manifest.lock */,
+				7C47F273291BA57800E31593 /* Sources */,
+				7C47F274291BA57800E31593 /* Frameworks */,
+				7C47F275291BA57800E31593 /* Resources */,
+				B9355A33F19E10188358248E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C47F279291BA57800E31593 /* PBXTargetDependency */,
+			);
+			name = syncaidUITests;
+			productName = syncaidUITests;
+			productReference = 7C47F277291BA57800E31593 /* syncaidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C47F254291BA57600E31593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					7C41078D2935161E005B7796 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7C47F25B291BA57600E31593 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					7C47F26C291BA57800E31593 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7C47F25B291BA57600E31593;
+					};
+					7C47F276291BA57800E31593 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 7C47F25B291BA57600E31593;
+					};
+				};
+			};
+			buildConfigurationList = 7C47F257291BA57600E31593 /* Build configuration list for PBXProject "syncaid" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C47F253291BA57600E31593;
+			packageReferences = (
+				7C9AC19F293550D800CFAA9B /* XCRemoteSwiftPackageReference "ChartView" */,
+				7CCFEF9F2939240600D0933B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 7C47F25D291BA57600E31593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C47F25B291BA57600E31593 /* syncaid */,
+				7C47F26C291BA57800E31593 /* syncaidTests */,
+				7C47F276291BA57800E31593 /* syncaidUITests */,
+				7C41078D2935161E005B7796 /* syncaidWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C41078C2935161E005B7796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4107982935161F005B7796 /* Preview Assets.xcassets in Resources */,
+				7C4107952935161F005B7796 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F25A291BA57600E31593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1F630029252B7F00CCA3E8 /* Main.storyboard in Resources */,
+				7C6DDFA32937E52700EE0EA9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F26B291BA57800E31593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F275291BA57800E31593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24726DDDAD7C78D64BF0473D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-syncaid-syncaidUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EB09AD91AEC645FC8746072 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-syncaid-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7259F6149812CE2925534BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-syncaidTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D3B8AF2DF2766A523B1F08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-syncaid/Pods-syncaid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-syncaid/Pods-syncaid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-syncaid/Pods-syncaid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9355A33F19E10188358248E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-syncaid-syncaidUITests/Pods-syncaid-syncaidUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-syncaid-syncaidUITests/Pods-syncaid-syncaidUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-syncaid-syncaidUITests/Pods-syncaid-syncaidUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C41078A2935161E005B7796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4107932935161E005B7796 /* ContentView.swift in Sources */,
+				7C4107912935161E005B7796 /* syncaidWatchApp.swift in Sources */,
+				7C41079F293516BE005B7796 /* SyncService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F258291BA57600E31593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C34972F2922590C00C346C3 /* WelcomeView.swift in Sources */,
+				7C74C64C293BD20700D043E8 /* GuardianProfileViewController.swift in Sources */,
+				7C7850B52938263F003B9DE6 /* UserViewModel.swift in Sources */,
+				7C991F10293E23BA0037D702 /* Scanner.swift in Sources */,
+				7CC4BE272943C2F100084DBF /* EmailToken.swift in Sources */,
+				7C9AC19E29354CB400CFAA9B /* SwiftUIView.swift in Sources */,
+				7C41E3F1293828E600999DFB /* User.swift in Sources */,
+				7C0821AF292C24BD00B04A22 /* InfoViewController.swift in Sources */,
+				7C805EAE2938211900D26EAD /* FaintViewModel.swift in Sources */,
+				7C29CA91292C97E900E097A6 /* AllDoneViewController.swift in Sources */,
+				7C5CAFC229314C11003428E8 /* PatientProfileViewController.swift in Sources */,
+				7C80B2622924F3E10090001C /* RoleView.swift in Sources */,
+				7C3497352922693500C346C3 /* syncaidapp.swift in Sources */,
+				7C69410529323439007ED40D /* GuardianHomeViewController.swift in Sources */,
+				7C555DA2293DFC61009C5AC4 /* QRViewController.swift in Sources */,
+				7CAF9BB22928287500A6C5E6 /* Variables.swift in Sources */,
+				7C80B27A29251E730090001C /* LoginViewController.swift in Sources */,
+				7C991F16293E42910037D702 /* ManageGuardianViewController.swift in Sources */,
+				7C35C84229377B9F00BC9C2C /* HistoryViewController.swift in Sources */,
+				7C80B2642924F3F60090001C /* PatientSelectButton.swift in Sources */,
+				7C29CA94292CACD400E097A6 /* ForgotPasswordViewController.swift in Sources */,
+				7C29CA97292CB60A00E097A6 /* OTPViewController.swift in Sources */,
+				7C41E3FC293834A100999DFB /* HistoryTableViewCell.swift in Sources */,
+				7C0821AB292BE73800B04A22 /* VerifyAccountViewController.swift in Sources */,
+				7C991F18293E48EC0037D702 /* ManageGuardiansTableViewCell.swift in Sources */,
+				7C29CA8E292C895900E097A6 /* SignupViewController.swift in Sources */,
+				7C80B2662924F3FE0090001C /* GuardianSelectButton.swift in Sources */,
+				7C69410729325958007ED40D /* LoadingViewController.swift in Sources */,
+				7C3497412922911F00C346C3 /* SplashScreenView.swift in Sources */,
+				7CE3D2D5293513B0001AC8ED /* SyncService.swift in Sources */,
+				7C2F17462938C3270049D8E7 /* GuardianSettingsViewController.swift in Sources */,
+				7C41E3F82938292100999DFB /* Faint.swift in Sources */,
+				7C2F416A2930FE3500C8AA09 /* PatientSettingsViewController.swift in Sources */,
+				7C991F12293E25060037D702 /* ScannerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F269291BA57800E31593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C47F272291BA57800E31593 /* syncaidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47F273291BA57800E31593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C47F27E291BA57800E31593 /* syncaidUITestsLaunchTests.swift in Sources */,
+				7C47F27C291BA57800E31593 /* syncaidUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C41079A2935161F005B7796 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C41078D2935161E005B7796 /* syncaidWatch Watch App */;
+			targetProxy = 7C4107992935161F005B7796 /* PBXContainerItemProxy */;
+		};
+		7C47F26F291BA57800E31593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C47F25B291BA57600E31593 /* syncaid */;
+			targetProxy = 7C47F26E291BA57800E31593 /* PBXContainerItemProxy */;
+		};
+		7C47F279291BA57800E31593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C47F25B291BA57600E31593 /* syncaid */;
+			targetProxy = 7C47F278291BA57800E31593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7C41079D2935161F005B7796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"syncaidWatch Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = syncaidWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ahmedfatma.syncaid;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaid.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		7C41079E2935161F005B7796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"syncaidWatch Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = syncaidWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = ahmedfatma.syncaid;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaid.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		7C47F27F291BA57800E31593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C47F280291BA57800E31593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		7C47F282291BA57800E31593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B891BB7F724A7EFD357BBC9 /* Pods-syncaid.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = syncaid/syncaid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"syncaid/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = syncaid/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7C47F283291BA57800E31593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0DDEFE2C56FF10C95F9C3A /* Pods-syncaid.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = syncaid/syncaid.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"syncaid/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = syncaid/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7C47F285291BA57800E31593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F3DC7237793D5A48727DECA /* Pods-syncaidTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/syncaid.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/syncaid";
+			};
+			name = Debug;
+		};
+		7C47F286291BA57800E31593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD91F4B739363FD05A21E89E /* Pods-syncaidTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/syncaid.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/syncaid";
+			};
+			name = Release;
+		};
+		7C47F288291BA57800E31593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A554340DB53454879860F6C5 /* Pods-syncaid-syncaidUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = syncaid;
+			};
+			name = Debug;
+		};
+		7C47F289291BA57800E31593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23B27B6EE5B9ACA67041ECEA /* Pods-syncaid-syncaidUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ahmedfatma.syncaidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = syncaid;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C41079C2935161F005B7796 /* Build configuration list for PBXNativeTarget "syncaidWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C41079D2935161F005B7796 /* Debug */,
+				7C41079E2935161F005B7796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47F257291BA57600E31593 /* Build configuration list for PBXProject "syncaid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47F27F291BA57800E31593 /* Debug */,
+				7C47F280291BA57800E31593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47F281291BA57800E31593 /* Build configuration list for PBXNativeTarget "syncaid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47F282291BA57800E31593 /* Debug */,
+				7C47F283291BA57800E31593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47F284291BA57800E31593 /* Build configuration list for PBXNativeTarget "syncaidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47F285291BA57800E31593 /* Debug */,
+				7C47F286291BA57800E31593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47F287291BA57800E31593 /* Build configuration list for PBXNativeTarget "syncaidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47F288291BA57800E31593 /* Debug */,
+				7C47F289291BA57800E31593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C9AC19F293550D800CFAA9B /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		7CCFEF9F2939240600D0933B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C9AC1A0293550D800CFAA9B /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C9AC19F293550D800CFAA9B /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		7CCFEFA02939240600D0933B /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CCFEF9F2939240600D0933B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7C47F254291BA57600E31593 /* Project object */;
+}
