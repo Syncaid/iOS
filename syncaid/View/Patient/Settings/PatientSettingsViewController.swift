@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 import Foundation
 import Alamofire
-
+import PopupDialog
 class PatientSettingsViewController: UIViewController {
 
     var IsDarkMode : Bool = false
@@ -17,63 +17,72 @@ class PatientSettingsViewController: UIViewController {
     
     
     @IBAction func QRbutton(_ sender: Any) {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let QRcode = storyboard.instantiateViewController(withIdentifier: "QR")
-            self.navigationController?.pushViewController(QRcode, animated: true)
+        self.performSegue(withIdentifier: "PatientQR", sender: self)
             
     }
     
     
     
     @IBAction func Switchbtn(_ sender: Any) {
-        
-        if( overrideUserInterfaceStyle == .dark)
-        { overrideUserInterfaceStyle = .light
+        let appDelegate = UIApplication.shared.windows.first
+       if( appDelegate?.overrideUserInterfaceStyle == .dark)
+        {
+           appDelegate?.overrideUserInterfaceStyle = .light
+           overrideUserInterfaceStyle = .light
             IsDarkMode = false
         }
         else{ overrideUserInterfaceStyle = .dark
+            appDelegate?.overrideUserInterfaceStyle = .dark
             IsDarkMode = true
-        }
+       }
+        
+        
+    
     }
     
     
     
+    @IBOutlet weak var pic: UIImageView!
     
-    
-    @IBOutlet weak var pic: UIImageView!{
-        
-        didSet {
-            pic.image = UIImage(named: "ahmed4")
-        }
-    
- }
+ 
     @IBOutlet weak var fullname: UILabel!
     @IBOutlet weak var email: UILabel!
     @ObservedObject var userViewModel = UserViewModel()
 
     
     @IBAction func ManageGuardians(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let manageguardians = storyboard.instantiateViewController(withIdentifier: "ManageGuardians")
-        self.navigationController?.pushViewController(manageguardians, animated: true)
+        self.performSegue(withIdentifier: "PatientManageGuardians", sender: self)
     }
     
     
     @IBAction func editprofile(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let editprofile = storyboard.instantiateViewController(withIdentifier: "EditPatient")
-        self.navigationController?.pushViewController(editprofile, animated: true)
+        self.performSegue(withIdentifier: "PatientEditProfile", sender: self)
     }
     
+    @IBAction func ChangePassword(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "PatientChangePassword", sender: self)
+    }
     
     @IBAction func logout(_ sender: UIButton) {
         
         let defaults = UserDefaults.standard
         let userid = defaults.object(forKey: "ID")
         
-        let alert = UIAlertController(title: "Are you sure ?", message: "Are you sure you want to log out", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Log out", style: .destructive, handler:{ action in
-         
+        
+        let title = "Are you sure"
+        
+        let message = "Do you really want to log out ?"
+        
+       
+
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "Dismiss") {
+          
+        }
+        let buttonTwo = DefaultButton(title: "Log out") {
             self.userViewModel.Logout(id: userid as! String, onSuccess: {
                 
                 let defaults = UserDefaults.standard
@@ -84,8 +93,13 @@ class PatientSettingsViewController: UIViewController {
                 defaults.set("", forKey: "ROLE")
                 defaults.set("" ,forKey: "VERIFIED")
                 defaults.set("", forKey: "VSTRING")
+                defaults.set(false, forKey:"LOGGEDIN")
+                
                 defaults.synchronize()
-                self.navigationController?.popToRootViewController(animated: true)
+                self.performSegue(withIdentifier: "Logout", sender: self)
+                
+                
+                
             },
                                  onFailure: {
                 (errorMessage) in
@@ -93,10 +107,19 @@ class PatientSettingsViewController: UIViewController {
                 print(errorMessage)
                 
             })
+        }
+        // This button will not the dismiss the dialog
+
+        CancelButton.appearance().titleColor = .systemRed
+        
+      
+        popup.addButtons([buttonOne,buttonTwo])
+
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+        
+        
        
-                                      }))
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
         
       
         
@@ -109,26 +132,48 @@ class PatientSettingsViewController: UIViewController {
     
     
     
+    @IBOutlet weak var `switch`: UISwitch!
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         let defaults = UserDefaults.standard
-        var Email = defaults.object(forKey: "EMAIL")
+        let Email = defaults.object(forKey: "EMAIL")
         pic.layer.cornerRadius = pic.frame.width/2
-        var Firstname = defaults.object(forKey: "FIRSTNAME")!
-        var Lastname = defaults.object(forKey: "LASTNAME")!
        
-        fullname.text = Firstname as! String
-        email.text = Email as! String
+        let Firstname = defaults.object(forKey: "FIRSTNAME")! as! String
+        viewWillAppear(true)
+        let Lastname = defaults.object(forKey: "LASTNAME")! as! String
+       
+        fullname.text = Firstname+" "+Lastname 
+        email.text = Email as? String
+        
+        let profilephoto = defaults.object(forKey: "PROFILEPHOTO")
+        let imageUrl = URL(string: profilephoto as! String)!
+        let task = URLSession.shared.dataTask(with: imageUrl) {
+            (data,response,error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            if let data = data, let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.pic.image = image
+                }
+            }
+            
+        }
+        task.resume()
+        
+        
     }
     
     
     
     func showToast(message : String, font: UIFont) {
         
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-100, width: 250, height: 35))
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 125, y: self.view.frame.size.height-130, width: 250, height: 35))
         toastLabel.backgroundColor = UIColor.red.withAlphaComponent(0.6)
         toastLabel.textColor = UIColor.white
         toastLabel.font = font

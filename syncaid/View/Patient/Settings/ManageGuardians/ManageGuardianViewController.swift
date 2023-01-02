@@ -9,8 +9,9 @@ import UIKit
 import SwiftUI
 import Foundation
 import Alamofire
+import PopupDialog
 
-class ManageGuardiansViewController: UIViewController,  UITableViewDataSource,UITableViewDelegate {
+class ManageGuardiansViewController: UIViewController,  UITableViewDataSource,UITableViewDelegate, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     @ObservedObject var userViewModel = UserViewModel()
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,11 +28,57 @@ class ManageGuardiansViewController: UIViewController,  UITableViewDataSource,UI
         return cell
     }
     
+    
+    
+    @IBAction func AddGuardian(_ sender: UIButton) {
+      
+        
+        let title = "Assign a guardian"
+        
+        let message = "In order to assign a guardian you must scan his QR code. You guardian can find his QR code in Settings"
+        
+        let image = UIImage(named: "qrcode")
+
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message, image: image)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "Dismiss") {
+            
+        }
+
+        // This button will not the dismiss the dialog
+        let buttonTwo = DefaultButton(title: "Scan QR", dismissOnTap: false) {
+            
+          
+            let imagePickerController = UIImagePickerController()
+            imagePickerController.delegate = self
+            imagePickerController.sourceType = .camera
+            imagePickerController.showsCameraControls = true
+            imagePickerController.showsCameraControls = true
+            self.present(imagePickerController, animated: true, completion: nil)
+                    
+        }
+        DefaultButton.appearance().titleColor = UIColor(named: "btncolor1")
+
+      
+        popup.addButtons([buttonOne, buttonTwo])
+
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    
+    
+    
     @IBAction func CallGuardian(_ sender: UIButton) {
         let point = (sender as AnyObject).convert(CGPoint.zero, to:GuardianTable)
         guard let indexpath = GuardianTable.indexPathForRow(at: point) else { return }
         let phone = "tel://"
-        var tel = self.userViewModel.UserGuardians[indexpath.row].Tel!
+        let tel = self.userViewModel.UserGuardians[indexpath.row].Tel!
                         let phoneNumberformatted = phone + tel
                         guard let url = URL(string: phoneNumberformatted) else {
                             
@@ -41,14 +88,28 @@ class ManageGuardiansViewController: UIViewController,  UITableViewDataSource,UI
     
     @IBAction func DeleteGuardian(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Are you sure ?", message: "Deleting this log is undoable", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler:{ action in
+        
+        let title = "Are you sure"
+        
+        let message = "Deleting this guardian is undoable"
+        
+       
+
+        // Create the dialog
+        let popup = PopupDialog(title: title, message: message)
+
+        // Create buttons
+        let buttonOne = CancelButton(title: "Dismiss") {
+          
+        }
+        
+        let buttonTwo = DefaultButton(title: "Delete") {
             let point = (sender as AnyObject).convert(CGPoint.zero, to:self.GuardianTable)
             guard let indexpath = self.GuardianTable.indexPathForRow(at: point) else { return }
-            var guardianid = self.userViewModel.UserGuardians[indexpath.row]._id
+            let guardianid = self.userViewModel.UserGuardians[indexpath.row]._id
             let defaults = UserDefaults.standard
-            var userid = defaults.object(forKey: "ID")!
-            print(guardianid)
+            let userid = defaults.object(forKey: "ID")!
+            
             self.userViewModel.deleteGuardian(userId:userid as! String, guardianId: guardianid!, onSuccess: {
                 self.userViewModel.UserGuardians.remove(at: indexpath.row)
                   self.GuardianTable.reloadData()
@@ -56,17 +117,17 @@ class ManageGuardiansViewController: UIViewController,  UITableViewDataSource,UI
               print("error")
                 
             })
-            
-       
-                                      }))
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
+        }
         
+        CancelButton.appearance().titleColor = .systemRed
         
+      
+        popup.addButtons([buttonOne,buttonTwo])
+
         
-        
-        
-        
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+    
     }
     
 

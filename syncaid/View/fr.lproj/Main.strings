@@ -1,0 +1,366 @@
+
+/* Class = "UILabel"; text = "please enter your informations"; ObjectID = "004-Fk-Vh5"; */
+"004-Fk-Vh5.text" = "please enter your informations";
+
+/* Class = "UILabel"; text = "General"; ObjectID = "0IT-3F-GHw"; */
+"0IT-3F-GHw.text" = "General";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "0dT-o4-NBw"; */
+"0dT-o4-NBw.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0dT-o4-NBw"; */
+"0dT-o4-NBw.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "0km-v1-CTc"; */
+"0km-v1-CTc.text" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1Gb-NK-J4F"; */
+"1Gb-NK-J4F.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4Nd-DV-mBy"; */
+"4Nd-DV-mBy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Last name"; ObjectID = "4hY-eV-wc8"; */
+"4hY-eV-wc8.text" = "Last name";
+
+/* Class = "UISegmentedControl"; 5PO-Lb-6FF.segmentTitles[0] = "Guardian"; ObjectID = "5PO-Lb-6FF"; */
+"5PO-Lb-6FF.segmentTitles[0]" = "Guardian";
+
+/* Class = "UISegmentedControl"; 5PO-Lb-6FF.segmentTitles[1] = "Patient"; ObjectID = "5PO-Lb-6FF"; */
+"5PO-Lb-6FF.segmentTitles[1]" = "Patient";
+
+/* Class = "UILabel"; text = "Confirm password"; ObjectID = "635-MV-NR7"; */
+"635-MV-NR7.text" = "Confirm password";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "6fJ-ph-VkM"; */
+"6fJ-ph-VkM.text" = "Age";
+
+/* Class = "UIButton"; configuration.title = "Forgot your password?"; ObjectID = "7TF-rw-WNl"; */
+"7TF-rw-WNl.configuration.title" = "Forgot your password?";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7TF-rw-WNl"; */
+"7TF-rw-WNl.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Role"; ObjectID = "7ee-hU-TcQ"; */
+"7ee-hU-TcQ.text" = "Role";
+
+/* Class = "UIButton"; configuration.title = "            Edit profile"; ObjectID = "8GT-mF-hag"; */
+"8GT-mF-hag.configuration.title" = "            Edit profile";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8GT-mF-hag"; */
+"8GT-mF-hag.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Place QR code inside the frame, avoid shaking "; ObjectID = "8lX-l9-tCS"; */
+"8lX-l9-tCS.text" = "Place QR code inside the frame, avoid shaking ";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "8rZ-me-a73"; */
+"8rZ-me-a73.title" = "Home";
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "8yA-t4-xEy"; */
+"8yA-t4-xEy.configuration.title" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8yA-t4-xEy"; */
+"8yA-t4-xEy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "We have already sent you en Email please click on the \"Confirm Account\" Button to verify your account."; ObjectID = "96r-jd-12d"; */
+"96r-jd-12d.text" = "We have already sent you en Email please click on the \"Confirm Account\" Button to verify your account.";
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "9U7-Lc-Lo4"; */
+"9U7-Lc-Lo4.text" = "Phone number";
+
+/* Class = "UILabel"; text = "You'll receive a 4 digit code to your email address "; ObjectID = "AlT-Kl-d35"; */
+"AlT-Kl-d35.text" = "You'll receive a 4 digit code to your email address ";
+
+/* Class = "UILabel"; text = "History"; ObjectID = "AxG-iT-6CI"; */
+"AxG-iT-6CI.text" = "History";
+
+/* Class = "UILabel"; text = "Tell us about yourself"; ObjectID = "BsV-NW-bWj"; */
+"BsV-NW-bWj.text" = "Tell us about yourself";
+
+/* Class = "UILabel"; text = "Ahmed Kazez"; ObjectID = "BvR-Qz-0QE"; */
+"BvR-Qz-0QE.text" = "Ahmed Kazez";
+
+/* Class = "UILabel"; text = "Welcome Back!"; ObjectID = "DeO-3d-9iv"; */
+"DeO-3d-9iv.text" = "Welcome Back!";
+
+/* Class = "UIButton"; configuration.title = "            Edit profile"; ObjectID = "Dxv-kb-8aN"; */
+"Dxv-kb-8aN.configuration.title" = "            Edit profile";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Dxv-kb-8aN"; */
+"Dxv-kb-8aN.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "Fhi-iU-Oal"; */
+"Fhi-iU-Oal.title" = "History";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "GYg-3f-2ph"; */
+"GYg-3f-2ph.text" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Save Changes"; ObjectID = "Gak-IC-Uh4"; */
+"Gak-IC-Uh4.configuration.title" = "Save Changes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gak-IC-Uh4"; */
+"Gak-IC-Uh4.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Gk3-lo-3E7"; */
+"Gk3-lo-3E7.text" = "Label";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Gl1-gf-mS0"; */
+"Gl1-gf-mS0.text" = "Email";
+
+/* Class = "UILabel"; text = "Guardian home"; ObjectID = "HIG-2d-0mv"; */
+"HIG-2d-0mv.text" = "Guardian home";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "HaI-lJ-sqH"; */
+"HaI-lJ-sqH.text" = "Email";
+
+/* Class = "UILabel"; text = "Dark Appearance"; ObjectID = "Hx0-WI-yjH"; */
+"Hx0-WI-yjH.text" = "Dark Appearance";
+
+/* Class = "UIButton"; configuration.title = "   Face ID"; ObjectID = "IHq-E0-BVD"; */
+"IHq-E0-BVD.configuration.title" = "   Face ID";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IHq-E0-BVD"; */
+"IHq-E0-BVD.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "J5a-XQ-Vhx"; */
+"J5a-XQ-Vhx.text" = "Gender";
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "Jop-CM-qwf"; */
+"Jop-CM-qwf.text" = "First name";
+
+/* Class = "UIButton"; configuration.title = "            QR code"; ObjectID = "LjM-rW-GGO"; */
+"LjM-rW-GGO.configuration.title" = "            QR code";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LjM-rW-GGO"; */
+"LjM-rW-GGO.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "M34-o4-Tg4"; */
+"M34-o4-Tg4.title" = "Settings";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "MM0-Sg-1la"; */
+"MM0-Sg-1la.text" = "Settings";
+
+/* Class = "UIButton"; configuration.title = "            Log out"; ObjectID = "POG-Fm-wwO"; */
+"POG-Fm-wwO.configuration.title" = "            Log out";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "POG-Fm-wwO"; */
+"POG-Fm-wwO.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Q6P-1n-msd"; */
+"Q6P-1n-msd.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Go to Homepage"; ObjectID = "Quw-hD-o1r"; */
+"Quw-hD-o1r.configuration.title" = "Go to Homepage";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Quw-hD-o1r"; */
+"Quw-hD-o1r.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "SMc-lp-Sp1"; */
+"SMc-lp-Sp1.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Please enter your informations."; ObjectID = "TLg-20-cdz"; */
+"TLg-20-cdz.text" = "Please enter your informations.";
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "TPD-t7-llE"; */
+"TPD-t7-llE.title" = "History";
+
+/* Class = "UILabel"; text = "Ahmed Kazez"; ObjectID = "UGk-pQ-SZF"; */
+"UGk-pQ-SZF.text" = "Ahmed Kazez";
+
+/* Class = "UISegmentedControl"; UQB-rY-NOC.segmentTitles[0] = "Male"; ObjectID = "UQB-rY-NOC"; */
+"UQB-rY-NOC.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; UQB-rY-NOC.segmentTitles[1] = "Female"; ObjectID = "UQB-rY-NOC"; */
+"UQB-rY-NOC.segmentTitles[1]" = "Female";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "VvX-pg-AJe"; */
+"VvX-pg-AJe.text" = "Password";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "X3g-eo-hnu"; */
+"X3g-eo-hnu.text" = "Email";
+
+/* Class = "UITabBarItem"; title = "Devices"; ObjectID = "Xef-gi-8P8"; */
+"Xef-gi-8P8.title" = "Devices";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YG8-Sn-TiR"; */
+"YG8-Sn-TiR.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "            QR code"; ObjectID = "YKn-lC-f7q"; */
+"YKn-lC-f7q.configuration.title" = "            QR code";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YKn-lC-f7q"; */
+"YKn-lC-f7q.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "YbH-mS-Qyq"; */
+"YbH-mS-Qyq.text" = "Password";
+
+/* Class = "UILabel"; text = "Create your account"; ObjectID = "YgR-sZ-eAn"; */
+"YgR-sZ-eAn.text" = "Create your account";
+
+/* Class = "UILabel"; text = "Last name"; ObjectID = "YhM-ar-7mP"; */
+"YhM-ar-7mP.text" = "Last name";
+
+/* Class = "UIButton"; configuration.title = "            Log out"; ObjectID = "ZKF-Qr-RZv"; */
+"ZKF-Qr-RZv.configuration.title" = "            Log out";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZKF-Qr-RZv"; */
+"ZKF-Qr-RZv.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Verify"; ObjectID = "Zoi-Z2-YAg"; */
+"Zoi-Z2-YAg.configuration.title" = "Verify";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Zoi-Z2-YAg"; */
+"Zoi-Z2-YAg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "aCH-nU-S62"; */
+"aCH-nU-S62.text" = "Age";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "aMj-WR-Zfb"; */
+"aMj-WR-Zfb.title" = "Home";
+
+/* Class = "UITextField"; text = "Add Faint"; ObjectID = "abT-M4-Izs"; */
+"abT-M4-Izs.text" = "Add Faint";
+
+/* Class = "UILabel"; text = "All done!"; ObjectID = "b0B-l7-Eep"; */
+"b0B-l7-Eep.text" = "All done!";
+
+/* Class = "UIViewController"; title = "PatientSettings"; ObjectID = "b2l-6q-ebc"; */
+"b2l-6q-ebc.title" = "PatientSettings";
+
+/* Class = "UILabel"; text = "New Password"; ObjectID = "bJQ-YG-5Nb"; */
+"bJQ-YG-5Nb.text" = "New Password";
+
+/* Class = "UIButton"; configuration.title = "Save Changes"; ObjectID = "bkm-X5-cGb"; */
+"bkm-X5-cGb.configuration.title" = "Save Changes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bkm-X5-cGb"; */
+"bkm-X5-cGb.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "            Manage Patients"; ObjectID = "by5-s7-yeU"; */
+"by5-s7-yeU.configuration.title" = "            Manage Patients";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "by5-s7-yeU"; */
+"by5-s7-yeU.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "cJQ-5i-xFK"; */
+"cJQ-5i-xFK.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cJQ-5i-xFK"; */
+"cJQ-5i-xFK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Duration :"; ObjectID = "e4t-7p-q6T"; */
+"e4t-7p-q6T.text" = "Duration :";
+
+/* Class = "UIButton"; configuration.title = "Resend verification email"; ObjectID = "eT0-lf-YgE"; */
+"eT0-lf-YgE.configuration.title" = "Resend verification email";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "eT0-lf-YgE"; */
+"eT0-lf-YgE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Recover your password"; ObjectID = "fXJ-g6-5r1"; */
+"fXJ-g6-5r1.text" = "Recover your password";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "gEL-Qt-ddo"; */
+"gEL-Qt-ddo.text" = "Settings";
+
+/* Class = "UILabel"; text = "OTP"; ObjectID = "gI0-aI-ux2"; */
+"gI0-aI-ux2.text" = "OTP";
+
+/* Class = "UILabel"; text = "Verification code"; ObjectID = "gg4-fa-aLk"; */
+"gg4-fa-aLk.text" = "Verification code";
+
+/* Class = "UIButton"; configuration.title = "Sign up"; ObjectID = "hiQ-DX-AIn"; */
+"hiQ-DX-AIn.configuration.title" = "Sign up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hiQ-DX-AIn"; */
+"hiQ-DX-AIn.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Done"; ObjectID = "i0R-p5-5LC"; */
+"i0R-p5-5LC.configuration.title" = "Done";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "i0R-p5-5LC"; */
+"i0R-p5-5LC.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "ire-my-Vs7"; */
+"ire-my-Vs7.text" = "Date";
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "jpM-NH-bZA"; */
+"jpM-NH-bZA.text" = "First name";
+
+/* Class = "UIButton"; configuration.title = "Add"; ObjectID = "jrJ-xQ-gbZ"; */
+"jrJ-xQ-gbZ.configuration.title" = "Add";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jrJ-xQ-gbZ"; */
+"jrJ-xQ-gbZ.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "lGI-7O-AnR"; */
+"lGI-7O-AnR.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lGI-7O-AnR"; */
+"lGI-7O-AnR.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Your QR code"; ObjectID = "lQA-v5-xeK"; */
+"lQA-v5-xeK.text" = "Your QR code";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lWf-5B-D5w"; */
+"lWf-5B-D5w.text" = "Label";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "lWf-ko-t6y"; */
+"lWf-ko-t6y.text" = "Phone Number";
+
+/* Class = "UILabel"; text = "Last name"; ObjectID = "o49-2c-Vpv"; */
+"o49-2c-Vpv.text" = "Last name";
+
+/* Class = "UILabel"; text = "Manage Guardians"; ObjectID = "oXS-E9-Wl3"; */
+"oXS-E9-Wl3.text" = "Manage Guardians";
+
+/* Class = "UILabel"; text = "Please verify your account"; ObjectID = "of7-Ah-JqF"; */
+"of7-Ah-JqF.text" = "Please verify your account";
+
+/* Class = "UIButton"; configuration.title = "            Manage Guardians"; ObjectID = "og1-Eh-Rh8"; */
+"og1-Eh-Rh8.configuration.title" = "            Manage Guardians";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "og1-Eh-Rh8"; */
+"og1-Eh-Rh8.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Leave"; ObjectID = "p4x-xC-EQk"; */
+"p4x-xC-EQk.configuration.title" = "Leave";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "p4x-xC-EQk"; */
+"p4x-xC-EQk.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Duration in minutes"; ObjectID = "qEn-B8-puS"; */
+"qEn-B8-puS.text" = "Duration in minutes";
+
+/* Class = "UILabel"; text = "First name"; ObjectID = "r2m-GF-h7e"; */
+"r2m-GF-h7e.text" = "First name";
+
+/* Class = "UILabel"; text = "IpsumLorumIpsumLorumIpsumLorumIp"; ObjectID = "r6b-iK-KOI"; */
+"r6b-iK-KOI.text" = "IpsumLorumIpsumLorumIpsumLorumIp";
+
+/* Class = "UILabel"; text = "General"; ObjectID = "rhw-Se-odn"; */
+"rhw-Se-odn.text" = "General";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "rp9-uj-meI"; */
+"rp9-uj-meI.title" = "Settings";
+
+/* Class = "UILabel"; text = "Date  :"; ObjectID = "tKA-Pa-vgR"; */
+"tKA-Pa-vgR.text" = "Date  :";
+
+/* Class = "UILabel"; text = "Please enter the verification code we have sent to your email address"; ObjectID = "tpk-V3-OEl"; */
+"tpk-V3-OEl.text" = "Please enter the verification code we have sent to your email address";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "uQO-ox-AnH"; */
+"uQO-ox-AnH.text" = "Phone Number";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "v48-1g-T2J"; */
+"v48-1g-T2J.text" = "Age";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "x19-sB-i84"; */
+"x19-sB-i84.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Confirm Password"; ObjectID = "y0N-Pg-nAL"; */
+"y0N-Pg-nAL.text" = "Confirm Password";
+
+/* Class = "UILabel"; text = "Dark Appearance"; ObjectID = "yQb-2D-ZHW"; */
+"yQb-2D-ZHW.text" = "Dark Appearance";

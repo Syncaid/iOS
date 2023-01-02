@@ -2,28 +2,19 @@
 //  GuardianHomeViewController.swift
 //  syncaid
 //
-//  Created by AhmedFatma on 26/11/2022.
+//  Created by AhmedFatma on 2/1/2023.
 //
 
-import UIKit
+import SwiftUI
 
-class GuardianHomeViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationItem.setHidesBackButton(true, animated: true)
-        // Do any additional setup after loading the view.
+struct GuardianHomeViewController: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+struct GuardianHomeViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        GuardianHomeViewController()
     }
-    */
-
 }

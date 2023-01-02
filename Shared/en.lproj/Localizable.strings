@@ -1,0 +1,63 @@
+
+"recoverPassword" =  "Recover your password";
+"recoverParagraphe" =  "You'll receive a 4 digit code to your email address ";
+"Email" =  "Email";
+"WelcomeBck" =  "Welcome Back!";
+"Next" =  "Next";
+"EnterInfo" =  "Please enter your informations.";
+"Login" =  "Login";
+"Forgotpassword" =  "Forgot your password?";
+"CreateAccount" =  "Create your account";
+"FirstName" =  "First name";
+"LastName" =  "Last name";
+"ConfirmPassword" =  "Confirm password";
+"VerifCode" =  "Verification code";
+"VerifParag" =  "Please enter the verification code we have sent to your email address";
+"Verify" =  "Verify";
+"VerifAccount" =  "Please verify your account";
+"VerifAccParag" =  "We have already sent you en Email please click on the 'Confirm Account' Button to verify your account.";
+"SignUp" =  "Sign up";
+"SignUp" =  "Sign up";
+"NewPassword" =  "New Password";
+"PhoneNumber" =  "Phone number";
+"SelfInfo" =  "Tell us about yourself";
+"Role" =  "Role";
+"Gender" =  "Gender";
+"Age" =  "Age";
+"Male" =  "Male";
+"Female" =  "Female";
+"Guardian" =  "Guardian";
+"patient" =  "Patient";
+"ResendVerif" =  "Resend verification email";
+"Leave" =  "Leave";
+"Quote" =  "Your Safety is our priority. Have a safe day!";
+"AllDone" =  "All done!";
+"HomePage" =  "Go to Homepage";
+"History" =  "History";
+"Home" =  "Home";
+"Devices" =  "Devices";
+"Settings" =  "Settings";
+"Settings" =  "Settings";
+"Date" =  "Date";
+"Duration" =  "Duration";
+"DurationMin" =  "Duration in minutes";
+"AddFaint" =  "Add Faint";
+"Add" =  "Add";
+"DarkAppearance" =  "Dark Appearance";
+"EditProfile" =  "Edit profile";
+"ManageGuardians" =  "Manage Guardians";
+"QRCode" =  "QR Code";
+"QRcodetext" =  "Place QR code inside the frame, avoid shaking ";
+"LogOut" =  "Log out";
+"SaveChanges" =  "Save Changes";
+"Done" =  "Done";
+
+
+
+
+
+
+
+
+
+
